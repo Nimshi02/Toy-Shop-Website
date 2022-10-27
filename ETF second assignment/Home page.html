@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My happy place home page</title>
+<link rel="stylesheet" type="text/css" href="stype.css">
+	<link href="Anchor.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+#contenHolder{float:left;margin-left:50px;width:50%;}
+
+
+.ulDefault{float:left;margin:0;padding-bottom:50px;padding-left:0;padding-top:50px;text-align:center;width:95%!important;}
+
+.ulDefault li{float:left;list-style:outside none none;text-align:center;width:150px;}
+
+#demo-of-roller3d .ulDefault{
+background-color:#C6E3E3;
+float:left;
+width:90%;
+}
+
+</style>
+	<script src="jquery-3.6.0.min.js">
+		</script>
+	<script>
+		$(document).ready(function(){
+			$("#i1").mouseover(function(){
+				$("#i1").attr("height","150");
+				$("#i1").attr("width","175");
+			});
+		  })
+		$(document).ready(function(){
+			$("#i1").mouseout(function(){
+				$("#i1").attr("height","150");
+				$("#i1").attr("width","130");
+			});
+		  })
+			$(document).ready(function(){
+			$("#i2").mouseover(function(){
+				$("#i2").attr("height","150");
+				$("#i2").attr("width","175");
+			});
+		  })
+		$(document).ready(function(){
+			$("#i2").mouseout(function(){
+				$("#i2").attr("height","150");
+				$("#i2").attr("width","130");
+			});
+		  })
+			$(document).ready(function(){
+			$("#i3").mouseover(function(){
+				$("#i3").attr("height","150");
+				$("#i3").attr("width","175");
+			});
+		  })
+		$(document).ready(function(){
+			$("#i3").mouseout(function(){
+				$("#i3").attr("height","150");
+				$("#i3").attr("width","130");
+			});
+		  })
+			$(document).ready(function(){
+			$("#i4").mouseover(function(){
+				$("#i4").attr("height","150");
+				$("#i4").attr("width","175");
+			});
+		  })
+		$(document).ready(function(){
+			$("#i4").mouseout(function(){
+				$("#i4").attr("height","150");
+				$("#i4").attr("width","130");
+			});
+		  })
+			$(document).ready(function(){
+			$("#i5").mouseover(function(){
+				$("#i5").attr("height","150");
+				$("#i5").attr("width","175");
+			});
+		  })
+		$(document).ready(function(){
+			$("#i5").mouseout(function(){
+				$("#i5").attr("height","150");
+				$("#i5").attr("width","130");
+			});
+		  })
+		
+		</script>
+	<style>
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:#999;
+  font-size: 8px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.image {
+	color: #FFF;
+}
+</style>
+<script>
+
+var slideIndex = 0;
+function showSlides() {
+	
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</head>
+
+<body onload="showSlides()">
+<table width="968" height="682" border="0" align="center">
+  <tbody>
+    <tr>
+      <td width="383" height="126"><img src="Logos/ASLOGO.png" width="328" height="134" alt=""/></td>
+		<td width="575"><div>
+			<ul>
+			<li><a href="Home page.html"><b>Home</b></a></li>
+			<li><a href="About.html"><b>About</b></a></li><li><div class="dropdown" align="left">
+  					<button class="dropbtn"><b>Products</b></button>
+  					<div class="dropdown-content">
+    				<a href="Buliding blocks.php">Buliding blocks</a>
+    				<a href="Toy vehicles.php">Toy vehicles</a>
+    				<a href="Dolls.php">Dolls</a>
+				<a href="Animals.php">Animals</a>
+				<a href="Woden toys.php">Woden toys</a>
+  					</div></div></li>
+			<li><a href="Login.php"><b>Login</b></a></li>
+			<li><a href="Register.html"><b>SignUp</b></a></li>
+		 </ul></div>
+	  </td>
+    </tr>
+    <tr>
+      <td height="225" colspan="2">
+     <div class="slideshow-container">
+
+<div class="mySlides fade" align="center">
+  <img src="Slides/kids toys.jpg" style="width:50%">
+</div>
+<div class="mySlides fade" align="center">
+  <img src="Slides/buliding bocks2.jpg" style="width:50%">
+</div>
+<div class="mySlides fade" align="center">
+ <img src="Slides/toys7.jpg" style="width:50%">
+</div>
+<div class="mySlides fade" align="center">
+  <img src="Slides/toys3.jpg" style="width:50%">
+</div>
+<div class="mySlides fade" align="center">
+  <img src="Slides/toys4.jpg" style="width:50%">
+</div>
+<div class="mySlides fade" align="center">
+ <img src="Slides/toy-box.jpg" style="width:50%">
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ 
+</div></div>
+		</td>
+    </tr>
+    <tr>
+      <td colspan="2"><ul><h2>
+			<li><a href="Buliding blocks.php"><img src="Icons/building blocks.jpg" width="137" height="130" border="3px" id="i1"><br>
+		  Building blocks</a></li>
+	  		<li><a href="Toy vehicles.php"><img src="Icons/train.jpg" width="150" height="130" border="3px" id="i2"><br>
+  		  Toy vehicles</a></li>
+		  <li><a href="Dolls.php"><img src="Icons/dolls.jpg" width="137" height="130" border="3px" id="i3"><br>
+	      Dolls</a></li>
+		  <li><a href="Animals.php"><img src="Icons/animals.webp" width="150" height="130" border="3px" id="i4"><br>
+	      Animals</a></li>
+		  <li><a href="Woden toys.php"><img src="Icons/woden toys.jpg" width="150" height="130" border="3px" id="i5"><br>Woden toys</a></li>
+			  </h2></ul></td>
+    </tr>
+    <tr>
+      <td height="134"></td>
+    </tr>
+  </tbody>
+</table>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+<script src="Ancor.js" type="text/javascript"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#demo-of-roller3d a").anchorHoverEffect({ type: "roller3d" });
+
+        }); 
+    
+    </script>
+</body>
+</html>

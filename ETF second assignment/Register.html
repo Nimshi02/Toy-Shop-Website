@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register page</title>
+<link rel="stylesheet" type="text/css" href="stype.css">
+	<script>
+		function sendData()
+		{
+			var fname=document.getElementById("txtname").value;
+			var uname=document.getElementById("txtUname").value;
+			var address= document.getElementById("textarea").value;
+			var email=document.getElementById("txtEmail").value;
+			var contact=document.getElementById("txtnum").value;
+			if(isNaN(contact) || (contact.length<10))
+				{
+					alert ("please enter correct contact number");
+				}
+			var password=document.getElementById("pass").value;
+			var xhttp= new XMLHttpRequest();
+			xhttp.open("GET","data.php?fname="+fname+"&uname="+uname+"&address="+address+"&email="+email+"&contact="+contact+"&password="+password,true);
+			xhttp.send();
+		}
+		
+		</script>
+</head>
+
+<body>
+	<table width="968" height="682" border="0" align="center">
+  <tbody>
+    <tr>
+      <td width="383" height="126"><img src="Logos/ASLOGO.png" width="328" height="134" alt=""/></td>
+			<td width="575"><div>
+			<ul>
+			<li><a href="Home page.html"><b>Home</b></a></li>
+			<li><a href="About.html"><b>About</b></a></li><li><div class="dropdown" align="left">
+  					<button class="dropbtn"><b>Products</b></button>
+  					<div class="dropdown-content">
+    				<a href="Buliding blocks.php">Buliding blocks</a>
+    				<a href="Toy vehicles.php">Toy vehicles</a>
+    				<a href="Dolls.php">Dolls</a>
+				<a href="Animals.php">Animals</a>
+				<a href="Woden toys.php">Woden toys</a>
+  					</div></div></li>
+			<li><a href="Login.php"><b>Login</b></a></li>
+			<li><a href="#"><b>SignUp</b></a></li>
+		 </ul></div>
+	  </td>
+    </tr>
+	  
+	    <td colspan="2" style="text-align: left; font-size: 18px;"><form id="form1" name="form1" method="post" >
+		  <table width="485" height="344" border="0" align="center">
+			  <tbody>
+			    <tr>
+			      <td colspan="2" align="center"><h1>Sign Up</h1></td>
+		        </tr>
+			    <tr>
+			      <td width="237" height="47"><h3>Full Name</h3></td>
+			      <td width="238" ><input type="text" name="txtname" id="txtname" required></td>
+		        </tr>
+			    <tr>
+			      <td width="237" height="47"><h3>User Name</h3></td>
+			      <td><input type="text" name="txtUname" id="txtUname" required></td>
+		        </tr>
+				  <tr>
+			      <td width="237" height="47"><h3>Address</h3></td>
+			      <td><textarea name="textarea" id="textarea"></textarea></td>
+		        </tr>
+			    <tr>
+			      <td width="237" height="47"><h3>Email Address</h3></td>
+			      <td ><input type="text" name="txtEmail" id="txtEmail"></td>
+		        </tr>
+				  <tr><td width="237" height="47"><h3>Contact Number</h3></td>
+					  <td><input type="text" name="txtnum" id="txtnum" required>
+					  </td>
+				  </tr>
+				  <tr><td width="237" height="47"><h3>Password</h3></td>
+				    <td width="230" ><input type="password" name="pass" id="pass" required>
+					  </td>
+				  </tr>
+				  <tr><td height="47" colspan="2" align="center"><input type="submit" name="submit" id="submit" value="SignUp" onclick="sendData()">
+				    <input type="reset" name="reset" id="reset" value="Cancel">
+		          </td></tr>
+		    </tbody>
+		  </table>
+        </form></td>
+	  </tbody>
+</table>
+</body>
+</html>

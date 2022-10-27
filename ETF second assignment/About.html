@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About us</title>
+<link rel="stylesheet" type="text/css" href="stype.css">
+	<script src="jquery-3.6.0.min.js">
+		</script>
+	<script>
+	
+			$(document).ready(function(){
+			$("#i5").mouseover(function(){
+				$("#i5").attr("height","150");
+				$("#i5").attr("width","175");
+			});
+		  })
+		$(document).ready(function(){
+			$("#i5").mouseout(function(){
+				$("#i5").attr("height","134");
+				$("#i5").attr("width","328");
+			});
+		  })
+		$(document).ready(function(){
+			$("#i5").mouseover(function(){
+				changecolor();
+			});
+		  })		  
+		function changecolor()
+		{
+		$("p").css('color','brown');
+		}
+		$(document).ready(function(){
+			$("#i5").mouseout(function(){
+				back();
+			});
+		  })
+		function back()
+		{
+		$("p").css('color','black');
+		}
+		</script>
+</head>
+
+<body style="text-align: center; font-size: 30px;">
+	<table width="968" height="140" border="0" align="center">
+  <tbody>
+    <tr>
+      <td width="383" height="136"><img src="Logos/ASLOGO.png" width="328" height="134" id="i5"></td>
+		<td width="575"><div>
+			<ul>
+			<li><a href="Home page.html"><b>Home</b></a></li>
+			<li><a href="About.html"><b>About</b></a></li><li><div class="dropdown" align="left">
+  					<button class="dropbtn"><b>Products</b></button>
+  					<div class="dropdown-content">
+    				<a href="Buliding blocks.php">Buliding blocks</a>
+    				<a href="Toy vehicles.php">Toy vehicles</a>
+    				<a href="Dolls.php">Dolls</a>
+				<a href="Animals.php">Animals</a>
+				<a href="Woden toys.php">Woden toys</a>
+  					</div></div></li>
+			<li><a href="Login.php"><b>Login</b></a></li>
+			<li><a href="Register.html"><b>SignUp</b></a></li>
+		 </ul></div>
+	  </td>
+    </tr></tbody>
+	  </table>
+<h1>About Us</h1>
+<img src="Logos/ASLOGO.png">
+	<p style="font-size: 28px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif;" align="justify">
+		My happy place is a small toyshop started with small number of employees in 2014. The main goal of this business is to deliver the high quality goods for reasonable price to the customers.We obtain our goods from the best factories in the country as well as from the oversease. From this shop, clients can choose veriety of toys which they prefer. Now our company has 2 shops with 20 employees and we provide our delivery service all over the country. Our vision is to make a smile in every children's face. 
+</p>
+	<br>
+	<br>
+<p align="left">
+		Contact Us: 0112354754<br><br>
+		Email US: myhappyplace@gmail.com<br><br>
+		Visit Us: No 14,Queens road,Colombo 7
+</p>
+	
+</body>
+</html>
